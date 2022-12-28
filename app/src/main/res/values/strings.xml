@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SLIIT GURU</string>
+    <string name="Semester1">Semester 1</string>
+    <string name="Credit">Credit : 0</string>
+    <string name="GPA">GPA</string>
+    <string name="GPA_value">0.00</string>
+</resources>

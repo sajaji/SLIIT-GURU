@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp"
+    app:cardCornerRadius="9dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/rich_blue">
+
+        <TextView
+            android:id="@+id/Titlesingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="20px"
+            android:fontFamily="@font/roboto_medium"
+            android:text="This is Title"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Detailsingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Titlesingle"
+            android:layout_marginLeft="30px"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="20px"
+            android:fontFamily="@font/roboto_medium"
+            android:text="This is Detail"
+
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Detailsingle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/Datesingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="20px"
+                android:gravity="left"
+                android:text="This is Time"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/Timesingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="350px"
+                android:layout_marginRight="30px"
+                android:drawablePadding="20px"
+                android:text="This is Date"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datetime"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50px"
+            android:layout_marginBottom="25px">
+
+            <Button
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/edit"
+                android:layout_width="400px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/edit_btn"
+                android:text="Edit"
+
+                />
+
+            <Button
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/delete"
+                android:layout_width="400px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:layout_weight="1"
+                android:backgroundTint="@color/del_butt"
+                android:text="Delete"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

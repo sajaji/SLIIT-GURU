@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp"
+    app:cardCornerRadius="9dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/Hospitalsingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="20px"
+            android:text="This is Hospital Detail"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:layout_marginLeft="30px"/>
+
+        <TextView
+            android:id="@+id/Doctorsingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Hospitalsingle"
+            android:layout_marginLeft="30px"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="20px"
+            android:text="This is Doctor Detail"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/Datesingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30px"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="20px"
+            android:gravity="right"
+            android:text="This is Time"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/Timesingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Datesingle"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="-66dp"
+            android:layout_marginRight="30px"
+            android:drawablePadding="20px"
+            android:gravity="right"
+            android:text="This is Date"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_below="@id/Doctorsingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="400px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120px"
+                android:layout_weight="1"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:text="Edit"
+
+                />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="400px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="Delete"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

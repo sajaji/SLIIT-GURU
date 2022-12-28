@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp"
+    app:cardCornerRadius="9dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/rich_blue">
+
+
+        <TextView
+            android:id="@+id/texttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="20px"
+            android:fontFamily="@font/roboto_medium"
+            android:text="This is Title"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texttitle"
+            android:layout_marginLeft="30px"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="20px"
+            android:fontFamily="@font/roboto_medium"
+            android:text="This is Detail"
+
+
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textlink"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="25px">
+
+
+
+            <Button
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/edit"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/edit_btn"
+                android:text="Edit"
+
+
+
+                />
+
+
+
+            <Button
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/delete"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:layout_weight="1"
+                android:backgroundTint="@color/del_butt"
+                android:text="Delete"
+
+
+
+                />
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="20px"
+                android:src="@drawable/share" />
+        </LinearLayout>
+    </RelativeLayout></LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
